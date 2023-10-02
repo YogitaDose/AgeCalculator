@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="200dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/ic_date"
+            android:hint="11-jun-2014  "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Date"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/ic_date"
+            android:hint="11-jun-2014  "
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Years | 0 Months | 0 Days"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"/>
+
+
+</LinearLayout>
